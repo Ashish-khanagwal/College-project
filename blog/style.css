@@ -32,28 +32,28 @@ header a:hover {
 /* Menu bar */
 
 .menu__details {
+  min-height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin: 40px 0 60px 0;
 }
 
 .menu__details--info {
   display: inline-block;
   margin-left: 20px;
+  margin-top: -30px;
 }
 
 /* Menu button */
 
-.menu__details--btn {
+.menu__btn {
   position: absolute;
   top: 80%;
   left: 15%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-}
-
-.menu__btn {
   background: transparent;
   padding: 10px;
   border: none;
@@ -65,7 +65,7 @@ menu a {
   color: #555;
 }
 
-.btn {
+.menu__btn {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -79,7 +79,7 @@ menu a {
   transition-duration: 0.5s;
 }
 
-.btn:before {
+.menu__btn:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -100,17 +100,23 @@ menu a {
   transition-timing-function: ease-out;
 }
 
-.btn:hover,
-.btn:focus,
-.btn:active {
+.menu__btn:hover,
+.menu__btn:focus,
+.menu__btn:active {
   color: #fff;
 }
 
-.btn:hover:before,
-.btn:focus:before,
-.btn:active:before {
+.menu__btn:hover:before,
+.menu__btn:focus:before,
+.menu__btn:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Article Section */
+
+.content__area {
+  min-height: 80vh;
 }
