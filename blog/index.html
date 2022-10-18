@@ -21,13 +21,15 @@
   </head>
   <body>
     <div class="container">
+
+      <!-- Nav-bar section -->
       <header class="main__heading">
-        <h1 class="heading"><a href="#">Codevari-D</h1>
+        <h1 class="heading"><a href="#">Code-Blogs</h1>
         <nav class="nav__bar">
           <div class="nav__details">
             <ul class="nav__details-list nav--list">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blogs</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#blogs">Blogs</a></li>
               <li><a href="#">Resources</a></li>
               <li><a href="#">Connect</a></li>
             </ul>
@@ -35,6 +37,8 @@
         </nav>
       </header>
       <div class="menu">
+
+        <!-- Hero Section -->
         <menu class="menu__details">
           <div class="menu__details--info">
             <h1 style="font-size: 70px; color: #555; text-align: left; margin-bottom: 20px">One stop solution for learning programming languages</h1>
@@ -46,9 +50,49 @@
           </div>
         </menu>
       </div>
-        <article class="content__area">
-          <h1>About us</h1>
-        </article>
-      </div>
+
+      <!-- Article/about section -->
+      <article style="padding: 20px;display: flex; justify-content:center; align-items:center; flex-direction:column; margin-bottom: 15px" class="about container" id="about">
+        <h1 style="margin-top: 15px; border-bottom: 4px solid #555;">About us</h1>
+        <img style="margin-top: -15px" src="Img/banner.png" alt="languages bannner" class="about-img">
+        <div style="background-color: rgba(66, 14, 59, 0.1); padding: 20px; border-radius: 15px; margin: -15px 0 15px 0; " class="about-text">
+          <p style="text-align: center;color: #3f3d3d;font-size: 35px;">Your one stop solution to learn different aspects of programming via reading blogs written by professionals.
+          We have collected bunch amazig blogs on different programming languages and on different skills: Web Development, Android Development, Machine Learning, Data Science, 
+          DevOps and many more. These blogs surely will help you in boosting up your at present programming skills and you can learn new things too. </p>
+        </div>
+      </article>
+
+      <!-- Main/Blog Section -->
+      <main style="padding: 20px;display: flex; justify-content:center; align-items:center; flex-direction:column; margin-bottom: 15px" class="content__area container" id="blogs">
+        <h1 style="margin-bottom: 20px" >Blogs</h1>
+        <div class="blog-cards">
+          <div class="blog-card_1 card">
+            <div class="card-image">
+              <img width= "400" src="Img/javascript.jpg">
+            </div>
+            <p>This blog is about JavaScript</p>
+          </div>
+          <div class="blog-card_2 card">
+            <div class="card-image">
+              <img width="400" src="Img/java.jpg">
+            </div>
+            <p>This blog is about JavaScript</p>
+          </div>
+          <div class="blog-card_3 card">
+            <div class="card-image">
+              <img width="400" src="Img/python.jpg">
+            </div>
+            <p>This blog is about JavaScript</p>
+          </div>
+          <div class="blog-card_4 card">
+            <div class="card-image">
+              <img width="400" src="Img/react.jpg">
+            </div>
+            <p>This blog is about JavaScript</p>
+          </div>
+        </div>
+      </main>
+
+    </div>
   </body>
 </html>

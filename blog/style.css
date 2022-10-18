@@ -26,7 +26,7 @@ header a {
 }
 
 header a:hover {
-  color: #d47171;
+  color: #851010;
 }
 
 /* Menu bar */
@@ -115,8 +115,41 @@ menu a {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-/* Article Section */
+/* Blog Section */
 
-.content__area {
-  min-height: 80vh;
+main,
+article {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+main h1,
+article h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #555;
+}
+
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(66, 14, 59, 0.1);
+  padding: 15px;
+}
+
+main img {
+  border-radius: 10px;
+  height: 200px;
 }
